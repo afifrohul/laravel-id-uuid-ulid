@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('invoices', function (Blueprint $table) {
             $table->id();
-            $table->foreignUuid('user_id');
+            $table->foreignUlid('user_id');
             $table->string('code');
             $table->integer('amount');
             $table->text('note');
